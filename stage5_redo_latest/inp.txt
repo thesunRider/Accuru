@@ -1,0 +1,22 @@
+decl
+	int globone;
+	int main();
+	int func(int paramone);
+
+enddecl;
+begin
+	int main(){
+		decl
+			int locone;
+		enddecl;
+		locone = func(10);
+	}
+
+	int func(int paramone){
+		decl
+			int loctwo;
+		enddecl;
+		return 4;
+	}
+
+end

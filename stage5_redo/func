@@ -1,0 +1,31 @@
+decl
+	int result,factorial(int n);
+enddecl
+
+int factorial(int n){
+	decl
+		int f;
+	enddecl
+	begin
+		if(n<2) then
+			f=1;
+		else
+			f=n*factorial(n-1);
+			breakpoint;
+		endif;
+		return f;
+    end
+}
+
+
+int main(){
+	decl
+		int a;
+	enddecl
+	begin
+		read(a);
+		result = factorial(a);
+		write(result);
+		return 0;
+	end
+}

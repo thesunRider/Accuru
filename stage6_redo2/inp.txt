@@ -1,0 +1,33 @@
+type
+
+basket{
+	int fruits;
+	int count;
+};
+
+endtype;
+
+decl
+	int globone;
+	int main();
+	basket karma;
+	int func(int paramone);
+enddecl;
+
+begin
+	int main(){
+		decl
+			int locone;
+		enddecl;
+		karma = alloc();
+		locone = func(10);
+	}
+
+	int func(int paramone){
+		decl
+			int loctwo;
+		enddecl;
+		return 4;
+	}
+
+end
