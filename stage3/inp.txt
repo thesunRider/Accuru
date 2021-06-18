@@ -1,0 +1,9 @@
+begin
+a = 2;
+b = 10;
+if (5<10) then
+write(a);
+else
+write(b);
+endif;
+end

@@ -1,0 +1,28 @@
+decl 
+	int abc;
+	int abc();
+	int testfunc(int param1);
+enddecl
+begin
+
+int main(){
+	decl
+		str testvar;
+	endecl
+	testvar = testfunc(102);
+	write testvar;
+	return 10;
+}
+
+int testfunc(int param1){
+	decl
+		int a;
+		int b;
+		str cd;
+	enddecl
+	write "hey";
+	read cd;
+	return cd;
+}
+
+end

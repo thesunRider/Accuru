@@ -1,0 +1,18 @@
+decl
+int a,b,e;
+int c[10];
+str def;
+enddecl;
+begin
+e=78;
+c[5] = 87;
+read(c[5]);
+a = 2;
+b = 10;
+write(c[5]);
+if (c[5]<10) then
+write("less than 10");
+else
+write("more than 10");
+endif;
+end
